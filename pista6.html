@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista 6</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pista 6</h2>
+        <p>Sencillito saca a pasear a bruno dq 20 minutos y ocupo evidencia... gracias!</p>
+        <input type="text" id="clueInput" placeholder="Introduce el código">
+        <button id="nextButton">Siguiente</button>
+    </div>
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            const enteredCode = document.getElementById('clueInput').value.trim();
+            if (enteredCode === 'brunomarsjiji') {
+                window.location.href = 'pista7.html';
+            } else {
+                alert('la evidencia se veia fake alch');
+            }
+        });
+    </script>
+</body>
+</html>

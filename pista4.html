@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pista 4</h2>
+        <p>Encuentra el resultado de la bi y la bii y luego sumalos y restales 10</p>
+        <input type="text" id="clueInput" placeholder="Introduce el código">
+        <button id="nextButton">Siguiente</button>
+    </div>
+
+
+    <div class="container">
+        <img src="Imagen4.png" alt="Imagen de la pista">
+    </div>
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            const enteredCode = document.getElementById('clueInput').value.trim();
+            if (enteredCode === '6') {
+                window.location.href = 'pista5.html';
+            } else {
+                alert('QP ANAKAREN TE LA TIENES QUE SAAABERR');
+            }
+        });
+    </script>
+</body>
+</html>

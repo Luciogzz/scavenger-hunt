@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pista 1</h2>
+        <p>Uff la primera pista, como pijama dirián algunos esta fácil. No tiene mucha ciencía, a parte te va a hacer confiarte un chorro y pensaras que lo demás esta sencillo y te maltripearas bien cabrón tons cm.</p>
+        <input type="text" id="clueInput" placeholder="Introduce el código">
+        <button id="nextButton">Siguiente</button>
+    </div>
+
+    <div class="container">
+        <p>La pista es sencilla puede morir pronto y esperemos no lo haga...</p>
+    </div>
+
+    <div class="container">
+        <img src="Imagen1.jpg" alt="Imagen de la pista">
+    </div>
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            const enteredCode = document.getElementById('clueInput').value.trim();
+            if (enteredCode === 'oxxogas') {
+                window.location.href = 'pista2.html';
+            } else {
+                alert('Uff te dormiste esta mal!.');
+            }
+        });
+    </script>
+</body>
+</html>

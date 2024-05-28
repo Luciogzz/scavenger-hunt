@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pista 3</h2>
+        <p>Ok algo más sencillo y tranquilo vamos a incitar la amistad, what, si en efecto vamos a incitar la amistad. Para obtener el codigo solo tienes que regalar 2 tocumbos. No se a quien, no se como pero necesito una fotografia tuya regalando 2 tocumbos. Me puedes contactar a 8116898149.</p>
+        <input type="text" id="clueInput" placeholder="Introduce el código">
+        <button id="nextButton">Siguiente</button>
+    </div>
+
+
+    <div class="container">
+        <img src="Imagen3.jpg" alt="Imagen de la pista 3">
+    </div>
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            const enteredCode = document.getElementById('clueInput').value.trim();
+            if (enteredCode === 'josueyjorgesincamisa1') {
+                window.location.href = 'pista4.html';
+            } else {
+                alert('Qp Anakaren porque piensas así de josue y jorge alm!! respetalos');
+            }
+        });
+    </script>
+</body>
+</html>

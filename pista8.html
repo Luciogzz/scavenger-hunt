@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista 8</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pista 8</h2>
+        <p>Colorin colorado a la ultima pista has llegado, jajaja barras estoy cañon. la ultima pista esta demasiado sencilla. Sin acentos y todo pegado, gracias</p>
+        <input type="text" id="clueInput" placeholder="Introduce el código">
+        <button id="nextButton">Siguiente</button>
+    </div>
+
+
+    <div class="container">
+        <img src="Imagen8.png" alt="Imagen de la pista">
+    </div>
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            const enteredCode = document.getElementById('clueInput').value.trim();
+            if (enteredCode === 'maximo') {
+                window.location.href = 'fin.html';
+            } else {
+                alert('Hijole que no te lo supiste te dormiste, bno tip también es una persona');
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Final!</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f8ff;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            position: relative;
+        }
+        .message {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: #ff0;
+            top: -10px;
+            opacity: 0.7;
+            animation: fall 4s infinite;
+        }
+        @keyframes fall {
+            to {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">¡Alch jure que no lo ibas a acabar !<br>¡Me dormi, para encontrar tu invitación busca a la persona de la ultima pista, llevalo a desayunar o por un tocumbo o convive con el alchile lo que sea y el tendra tu invitación a prom!</div>
+    </div>
+    <script>
+        function createConfetti() {
+            const container = document.querySelector('.container');
+            for (let i = 0; i < 100; i++) {
+                const confetti = document.createElement('div');
+                confetti.classList.add('confetti');
+                confetti.style.backgroundColor = getRandomColor();
+                confetti.style.left = `${Math.random() * 100}vw`;
+                confetti.style.animationDelay = `${Math.random() * 4}s`;
+                container.appendChild(confetti);
+            }
+        }
+
+        function getRandomColor() {
+            const colors = ['#ff0', '#ff8c00', '#ff0080', '#00f', '#0f0', '#f00'];
+            return colors[Math.floor(Math.random() * colors.length)];
+        }
+
+        createConfetti();
+    </script>
+</body>
+</html>

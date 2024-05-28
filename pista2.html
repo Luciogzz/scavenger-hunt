@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pista 2</h2>
+        <p>Alch aquí ya me empezare a mamar y si se pondra un poco más dificil btw chat gpt esta prohibido y me dare cuanta si lo usas.</p>
+        <input type="text" id="clueInput" placeholder="Introduce el código">
+        <button id="nextButton">Siguiente</button>
+    </div>
+
+    <p>no es quien dice las palabras sino en el contexto en el que las dicen.</p>
+
+    <div class="container">
+        <p>-.-. --- -. / ... --- .-.. --- / ..- -. / -- --- ...- .. -- .. . -. - --- / -.. . / -- .. / ...- .- .-. .. - .- / -- --. .. -.-. .- .-.-.- - ..- ... / .--. .-. --- -... .-.. . -- .- ... / .--. .-. --- -. - --- / ... . / .. .-. -. .-.-.- -.-. --- -. / ..- -. / .--. . --.- ..- . --- / -- --- ...- .. -- .. . -. - --- / -.-- / ..- -. / . ... .--. .-.. . -. -.. --- .-. / ... . .-. .- ... - . -. -.. .-. .- ... / ..- -. / .--. .-. .. -. -.-. .. .--. . / -.-. --- -. / ..- -. .- / - --- -. . .-.. .- -.. .- / -.. . / -.. .. -. . .-. --- .-.-.- ..- -. / ...- . ... - .. -.. --- / -.-. .- .-. --- / .--. ..- . -.. . / -.-. --- -- .--. .-. .- .-. / .-. .- - --- -. . ... -. --- / -- .- ... .-.-.- ..- -. --- ... / .... . .-. -- --- ... --- ... / --.. .- .--. .- - --- ... / -.. . / -.-. .-. .. ... - .- .-.. .-.. .- ... / .--. .-. . --- -.-. ..- .--. .- -.-. .. --- -. . ... / .--. ..- . -.. . -. / .. .-. ... . / -.. . / - ..- / .- .-.. -- .- -.-. ..- .- -. -.. --- / ...- . .- ... / .- / - ..- ... / .--. .-. --- .--. .. --- ... / -- ..- . -... .-.. . ... / .- -- .. --. --- ... --.- ..- . / - . / .- -.-- ..- -.. .- .-. .- -. / .- / .--. --- -. . .-. --..-- / ..- -. .- / -. ..- . ...- .- / -- .- .-. -.-. .- / -.. . / -- --- -.. .- .-.-.- .-.-. </p>
+    </div>
+
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            const enteredCode = document.getElementById('clueInput').value.trim();
+            if (enteredCode === 'shrek2') {
+                window.location.href = 'pista3.html';
+            } else {
+                alert('Uff te dormiste esta mal!, siempre digo que es una obra de arte');
+            }
+        });
+    </script>
+</body>
+</html>

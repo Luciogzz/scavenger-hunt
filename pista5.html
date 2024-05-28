@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista 5</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pista 5</h2>
+        <p>ACABA DE VER LA SERIE, PORFAVOR Y GRACIAS!</p>
+        <input type="text" id="clueInput" placeholder="Introduce el código">
+        <button id="nextButton">Siguiente</button>
+    </div>
+
+    <div class="container">
+        <p>Como se le conoce a la regla que tiene Barney de no salir con personas a las cuales ves mucho "es decir que trabajas con ellos o que son tu dentista doctores etc.." No se vale googlear otra pista es temporada 3 episodio algo entonces ponte a ver la serie jijijij</p>
+    </div>
+
+    <div class="container">
+        <img src="Imagen5.jpg" alt="Imagen de la pista">
+    </div>
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            const enteredCode = document.getElementById('clueInput').value.trim();
+            if (enteredCode === 'platino') {
+                window.location.href = 'pista6.html';
+            } else {
+                alert('VE LA SERIEEEE');
+            }
+        });
+    </script>
+</body>
+</html>

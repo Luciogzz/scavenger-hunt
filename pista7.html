@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pista 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Pista 7</h2>
+        <p>En una casa de espejos, un hombre se da cuenta de que solo puede ver el reflejo de su lado izquierdo. Si está mirando directamente al espejo, ¿qué objeto está sosteniendo en su mano derecha?
+        </p>
+        <input type="text" id="clueInput" placeholder="Introduce el código">
+        <button id="nextButton">Siguiente</button>
+    </div>
+
+    <script>
+        document.getElementById('nextButton').addEventListener('click', function() {
+            const enteredCode = document.getElementById('clueInput').value.trim();
+            if (enteredCode === 'unespejo') {
+                window.location.href = 'pista8.html';
+            } else {
+                alert('uff tantito más mamon');
+            }
+        });
+    </script>
+</body>
+</html>
